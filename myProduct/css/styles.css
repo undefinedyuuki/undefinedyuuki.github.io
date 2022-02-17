@@ -1,0 +1,235 @@
+/* *************** Global */
+html {
+  font-family: "PT Sans", sans-serif;
+}
+body {
+  margin: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  line-height: 1.5;
+  margin: 0 0 25px 0;
+}
+h1 {
+  font-size: 4rem;
+}
+h2,
+h3 {
+  font-size: 2rem;
+  padding-top: 30px;
+  margin: 0;
+}
+p {
+  font-size: 1.2rem;
+  margin: 30px 0 30px 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 500px;
+}
+.btn {
+  padding: 13px;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+}
+.container {
+  max-width: 70vw;
+  margin: auto;
+  text-align: center;
+}
+.showcase {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* *************** Navigation */
+nav {
+  background-color: #333;
+  position: fixed;
+  margin: 0 0 25vh 0;
+  display: block;
+  width: 100%;
+}
+nav ul {
+  margin: 0;
+}
+nav li {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 20px 10px 20px;
+}
+
+nav li:hover {
+  background-color: #444;
+}
+
+/* *************** Title */
+.header {
+  background-image: url(../images/parallax-bg1.jpeg);
+  min-height: 100vh;
+}
+.title {
+  color: white;
+}
+.title h1 {
+  padding-top: 25vh;
+}
+/* *************** CTA */
+.overview {
+  background-color: #252529;
+  color: white;
+  margin: 0;
+}
+.overview h2 {
+  font-size: 2.5rem;
+}
+.overview .btn {
+  background-color: darkred;
+}
+
+.overview p:last-of-type {
+  margin-bottom: 0;
+}
+.overview img {
+  margin-top: -20px;
+}
+.overview .btn:hover {
+  background-color: #b86161;
+}
+/* *************** Features */
+
+.features .btn {
+  background-color: darkblue;
+  display: block;
+  width: 127px;
+  margin: auto;
+}
+.features p:last-of-type {
+  margin-bottom: 30px;
+}
+.features img {
+  margin-top: -20px;
+}
+.features .btn:hover {
+  opacity: 0.6;
+}
+/* *************** Info */
+.info {
+  background-image: url(../images/parallax-bg2.jpeg);
+  min-height: 400px;
+  color: white;
+  padding: 10rem 0;
+}
+
+.info .container {
+}
+
+/* *************** Gift Card */
+.gift-card .container {
+  text-align: left;
+  align-items: center;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+.gift-card .flex-img {
+  flex: 1 1 auto;
+}
+.gift-card .flex-text {
+  flex: 0 1 66%;
+}
+.gift-card p {
+  font-size: 1rem;
+}
+.gift-card p {
+  margin-bottom: 20px;
+}
+.flex-text h2 {
+  padding-top: 0;
+}
+
+.flex-text a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9rem;
+}
+
+/* *************** Footer */
+footer {
+  margin: 0;
+  background-color: #252529;
+}
+.foot-nav {
+  color: white;
+  text-align: left;
+  padding-top: 20px 0 20px 0;
+}
+.foot-nav li:first-of-type {
+  font-size: 1.2rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.foot-nav a {
+  font-size: 0.8rem;
+  color: #a0a0a0;
+  border-bottom: none;
+}
+.foot-nav ul {
+  padding: 0;
+}
+.foot-nav a:hover {
+  color: #e4e4e4;
+}
+.foot-copywrite {
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+.foot-copywrite p {
+  font-size: 0.9rem;
+  padding: 15px 0 15px 0;
+  margin: 0;
+}
+/* *************** Media */
+@media screen and (min-width: 800px) {
+  .gift-card .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .flex-img img {
+    margin: 0 30px 0 0;
+  }
+}
+@media screen and (min-width: 520px) {
+  .foot-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 620px) {
+  nav li {
+    padding: 10px 5px;
+  }
+  nav ul {
+    padding: 0;
+  }
+  img {
+    max-width: 100%;
+  }
+}

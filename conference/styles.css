@@ -1,0 +1,394 @@
+/* Colour Palette
+
+#fff - Background / White
+#293f50 - Background / Blue
+#648880 - Teal Text
+ #a9b2b9 - Gray Text
+
+ https://picsum.photos/280/198
+ */
+
+/********************* Global Styles *********************/
+
+html {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+h1 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 300px;
+}
+h2 {
+  margin: 0;
+  font-weight: 300;
+  color: #648880;
+  font-size: 2.1rem;
+}
+h3 {
+  color: #648880;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+h4 {
+  color: white;
+  font-weight: 100;
+  font-size: 1.5rem;
+  line-height: 2;
+  margin-top: 0;
+}
+h5 {
+  color: #a9b2b9;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+p {
+  color: #a9b2b9;
+  font-weight: 300;
+  font-size: 1rem;
+}
+li {
+  list-style: none;
+}
+.content-wrap {
+  max-width: 900px;
+  width: 85%;
+  margin: 0 auto;
+}
+select,
+textarea,
+input {
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+/********************* Index *********************/
+/********************* Navigation *********************/
+
+header {
+  padding-bottom: 40px;
+}
+header,
+.CTA {
+  background-color: #293f50;
+}
+header .content-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.header-links {
+  list-style: none;
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+}
+.header-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.content-wrap h1 {
+  margin-bottom: auto;
+}
+.date-flex {
+  align-self: end;
+  text-align: right;
+}
+
+/********************* Title *********************/
+.CTA {
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 66px;
+}
+.CTA .content-wrap {
+  max-width: 900px;
+}
+.CTA .button {
+  font: inherit;
+  text-transform: uppercase;
+  color: white;
+  background: none;
+  border: 1px solid white;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+.CTA .button:hover {
+  background-color: white;
+  color: #648880;
+}
+
+/********************* Main FLex-box *********************/
+.teaser-section {
+  padding-top: 30px;
+}
+.main-flex {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 70px;
+}
+.teaser {
+  flex: 1;
+}
+.teaser img {
+  border-radius: 5px;
+  max-width: 100%;
+  margin: 0;
+}
+
+/********************* Footer *********************/
+footer {
+  background-color: #293f50;
+  /* padding-bottom:140px; */
+  box-shadow: 0 50vh 0 50vh #293f50; /*Found this box-shadow fix online to extend footer to bottom of page without a scroll. May be inefficient.*/
+}
+footer .content-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer .content-wrap li {
+  display: inline;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-left: 20px;
+}
+footer .content-wrap p {
+  color: #648880;
+  font-size: 1rem;
+}
+/********************* Media Queries *********************/
+
+@media screen and (max-width: 950px) {
+  .header-links li {
+    margin-left: 4px;
+  }
+  .teaser h3 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* Idealy, JS to make the menu a drop-down here */
+  h5 {
+    font-size: 1rem;
+  }
+  .main-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .speakers-main-flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/********************* Speakers *********************/
+/********************* Title *********************/
+.speakers-title {
+  background-color: #293f50;
+  text-align: center;
+  padding: 40px 0 5px 0;
+  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+}
+.speakers-title h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+.speakers-title h4 {
+  line-height: 1.5;
+  font-weight: 300;
+  color: gray;
+}
+
+/********************* Main Flex *********************/
+aside {
+  margin-left: 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+.speakers-main-flex-container {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.speaker-info {
+  border: 1px solid #dfe2e5;
+  margin-top: 60px;
+  border-radius: 5px;
+  height: 150px;
+  width: 250px;
+  /* padding: 22px; */
+}
+.speaker-info img {
+  vertical-align: top;
+  border-radius: 50%;
+  height: 130px;
+  margin: -66px 0 22px 0;
+}
+.speaker-info ul {
+  padding: 0 30px 0 30px;
+  color: #a9b2b9;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+/********************* Schedule *********************/
+/********************* Title*********************/
+/********************* Main Table *********************/
+table {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  border-spacing: 0;
+  /* This spacing css has to be here specifically for some reason */
+}
+table p {
+  margin: 0 0 20px 0;
+}
+tr td a:hover {
+  color: #dfe2e5;
+}
+tbody td {
+  border-top: 1px solid #dfe2e5;
+}
+th {
+  text-align: right;
+  padding-right: 45px;
+}
+td {
+  padding: 0;
+}
+td:first-of-type {
+  padding-right: 20px;
+}
+td h3 {
+  margin: 20px 0 0 0;
+  font-size: 1.2rem;
+}
+/********************* Venue *********************/
+.venue-title {
+  background-color: #293f50;
+  text-align: center;
+  padding: 40px 0 5px 0;
+  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+}
+.venue-title h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+.venue-title h4 {
+  line-height: 1.5;
+  font-weight: 300;
+  color: gray;
+}
+/********************* Main Map *********************/
+.venue-main .content-wrap {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.venue-details {
+  margin-right: 20px;
+}
+@media screen and (min-width: 910px) {
+  .venue-main .content-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/********************* Register title *********************/
+.register-title {
+  background-color: #293f50;
+  text-align: center;
+  padding: 40px 0 5px 0;
+  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+}
+.register-title h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+.register-title h4 {
+  line-height: 1.5;
+  font-weight: 300;
+  color: gray;
+}
+/********************* Register main *********************/
+.register-main .content-wrap {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.3;
+  margin-top: 50px;
+}
+.register-main .register-info {
+  flex: 1 1 580px;
+  margin-right: 50px;
+}
+.register-form {
+  flex: 1 0 270px;
+}
+.register-form fieldset {
+  border-style: none;
+  padding: 0;
+}
+.register-form label {
+  color: #648880;
+  font-weight: 400;
+  cursor: pointer;
+  display: block;
+}
+.register-form input,
+.register-form textarea {
+  width: 100%;
+}
+.register-form input,
+.register-form select,
+.register-form textarea {
+  border: 1px solid #c6c9cc;
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 1rem;
+  display: block;
+  margin: 10px 0 30px 0;
+}
+.register-form textarea {
+  height: 78px;
+}
+.register-main li {
+  color: #a9b2b9;
+  font-weight: 300;
+  font-size: 1rem;
+  list-style: square;
+}
+.register-form .button {
+  border: none;
+  background-color: #648880;
+  color: white;
+  width: 50%;
+  height: 40px;
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}

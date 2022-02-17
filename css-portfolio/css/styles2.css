@@ -1,0 +1,376 @@
+/*
+Fonts
+
+font-family: "Roboto Condensed", sans-serif;
+
+font-family: "Didact Gothic", sans-serif;
+
+COLOR PALETTE
+#009189 -  teal
+#ddbc00 - highlight gold
+#3a3a3a - black
+#ddd - gray
+off white - #343434
+*/
+
+/* Global styles
+------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #ddd;
+  position: relative;
+  z-index: -10;
+}
+
+a {
+  color: #009189;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #ddbc00;
+  border-color: #ddbc00;
+}
+h1 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 500;
+}
+h2 {
+  font-size: 2rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #009189;
+  display: block;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+}
+.contact {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+.content-wrap {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.divider > section {
+  border-bottom: 1px solid #bbb;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+/* clip-path divs
+------------------------------------*/
+.header-polygon-shadow,
+.main-polygon-shadow {
+  filter: drop-shadow(0px 0px 7px #333);
+  position: absolute;
+  /* overflow: hidden; */
+}
+
+.header-polygon-shadow {
+  z-index: 1000;
+  /* overflow: hidden; */
+}
+
+.header-polygon {
+  color: black;
+  clip-path: polygon(1% 0, 100% 0, 100% 0, 10% 100%);
+  position: relative;
+  background: #ededed;
+  height: 350px;
+  width: 95vw;
+  padding-bottom: -200px;
+  overflow: hidden;
+}
+
+.main-polygon {
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+  position: relative;
+  background-color: #ededed;
+  width: 90%;
+  margin: 0 auto;
+  bottom: -15vh;
+}
+
+/* NTS: In order to change the z-index of clip-path/filter drop-shadows, you must give them a position value other than static. Otherwise they will layer in HTML order. */
+
+/* Header
+------------------------------------*/
+header svg {
+  position: absolute;
+  left: 350px;
+}
+header h1 {
+  display: inline-block;
+  margin: 40px 0 0 7%;
+  font-size: 5rem;
+  font-weight: 400;
+}
+header h2 {
+  position: relative;
+  margin: 0px 0 0 8%;
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+header h3 {
+  position: relative;
+  margin: 5px 0 0 8.5%;
+  font-size: 1.2rem;
+}
+header a {
+  display: inline-block;
+  position: absolute;
+  left: 10vw;
+  top: 230px;
+}
+.contact {
+  color: #009189;
+  font-size: 1.6rem;
+  padding: 0 4px 0 4px;
+  border: 5px solid #009189;
+  display: inline;
+}
+
+/* Profile
+------------------------------------*/
+.profile {
+  color: #009189;
+  margin-bottom: 50px;
+}
+.btn {
+  background: none;
+  border: 2px solid #009189;
+  padding: 20px;
+  border-radius: 20px;
+}
+.about {
+  padding: 0 0 0 30%;
+  margin-top: 40px;
+}
+.profile h2 {
+  font-size: 2rem;
+  margin: 0 0 0 20px;
+  display: flex;
+  text-align: right;
+  align-items: center;
+}
+.profile h2::before {
+  content: "";
+  display: block;
+  position: relative;
+  right: 20px;
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  white-space: nowrap;
+}
+.profile p {
+  text-align: right;
+  /* padding: 0px 0 0 50%; */
+}
+
+.profile ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0 10px;
+  justify-content: flex-end;
+  text-align: right;
+  font-weight: bold;
+}
+/* Projects
+------------------------------------*/
+.projects h2,
+.work-experience h2,
+.education h2 {
+  display: flex;
+  align-items: center;
+}
+.projects h2::after,
+.work-experience h2::after,
+.education h2::after {
+  content: "";
+  display: block;
+  position: relative;
+  margin: 0 10px 0 10px;
+  width: 100%;
+  height: 1px;
+  background: #bbb;
+  white-space: nowrap;
+}
+.preamble {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 40%;
+  font-size: 1.1rem;
+  text-align: right;
+}
+.projects li {
+  display: inline;
+}
+.project-container {
+  padding: 20px 0 20px 0;
+}
+.project-text {
+  flex: 0 0 50%;
+}
+.project-includes-list {
+  color: #aaa;
+}
+.project-includes-list:nth-of-type(1n + 2) {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+}
+
+.project-image img {
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  background-position: left;
+  border-radius: 10px;
+}
+.project-image a:hover {
+  opacity: 0.6;
+}
+
+.project-links svg {
+  height: 30px;
+  margin-left: 10px;
+}
+.project-container:nth-of-type(2n + 1) {
+  flex-direction: row-reverse;
+}
+.project-container:nth-of-type(2n + 1) .project-text {
+  text-align: right;
+}
+
+/* Work Experience
+------------------------------------*/
+.work-experience h2 {
+  flex-direction: row-reverse;
+}
+
+.job-summary li {
+  list-style: circle;
+  margin: 0 0 20px 0;
+}
+/* Education
+------------------------------------*/
+.education-item {
+  margin: 20px 0 0 0;
+}
+/* Contact Info
+------------------------------------*/
+footer {
+  background: #ddd;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 4px dimgray;
+  text-align: center;
+  margin: 70px 0 0 0;
+  padding: 30px;
+  font-size: inherit;
+}
+footer .contact {
+  font-size: 2rem;
+}
+footer h2 {
+  margin: 0 0 20px 0;
+}
+footer p {
+  font-size: 1.5rem;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Responsive
+------------------------------------*/
+@media screen and (min-width: 850px) {
+  .project-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+  .job-item {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 849px) {
+  .about {
+    font-size: 0.8rem;
+    margin: 0 0 0 0;
+  }
+  .preamble {
+    font-size: 0.9rem;
+    margin: 0 0 0 30px;
+  }
+  header h1 {
+    font-size: 3rem;
+    margin: 0 0 0 15px;
+  }
+  header h2 {
+    font-size: 1.3rem;
+    margin: 0 0 0 5%;
+  }
+  header h3 {
+    font-size: 0.9rem;
+    color: #ededed;
+  }
+  header svg {
+    position: absolute;
+    left: 40px;
+  }
+  header .contact {
+    top: 90px;
+    font-size: 1rem;
+    border-width: 4px;
+  }
+  .header-polygon {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 10% 100%);
+    height: 180px;
+    overflow: hidden;
+    width: 90vw;
+  }
+  .main-polygon {
+    bottom: -3vh;
+  }
+}

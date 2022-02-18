@@ -37,6 +37,7 @@ h1 {
   line-height: 1;
   text-transform: uppercase;
   width: 300px;
+  margin: 0px;
 }
 h2 {
   margin: 0;
@@ -48,6 +49,7 @@ h3 {
   color: #648880;
   font-weight: 300;
   font-size: 1.5rem;
+  padding: 20px 0 0 0;
 }
 h4 {
   color: white;
@@ -70,6 +72,7 @@ p {
 li {
   list-style: none;
 }
+
 .content-wrap {
   max-width: 900px;
   width: 85%;
@@ -91,6 +94,13 @@ header,
 .CTA {
   background-color: #293f50;
 }
+header h1:hover {
+  border-top: 3px solid #a1d3b0;
+  margin-bottom: -3px;
+}
+header h3 {
+  margin: 0 0 30px 0;
+}
 header .content-wrap {
   display: flex;
   justify-content: space-between;
@@ -106,6 +116,9 @@ header .content-wrap {
 .header-links li {
   display: inline-block;
   margin-left: 20px;
+}
+.header-links a:hover {
+  text-decoration: underline #a1d3b0;
 }
 .content-wrap h1 {
   margin-bottom: auto;
@@ -155,6 +168,9 @@ header .content-wrap {
   max-width: 100%;
   margin: 0;
 }
+.teaser a:hover {
+  opacity: 0.7;
+}
 
 /********************* Footer *********************/
 footer {
@@ -192,8 +208,17 @@ footer .content-wrap p {
 }
 @media screen and (max-width: 800px) {
   /* Idealy, JS to make the menu a drop-down here */
+  header h1 {
+    font-size: 2.8rem;
+  }
+  header li {
+    font-size: 0.8rem;
+  }
   h5 {
     font-size: 1rem;
+  }
+  .content-wrap {
+    width: 95%;
   }
   .main-flex {
     flex-direction: column;
@@ -202,6 +227,18 @@ footer .content-wrap p {
   .speakers-main-flex-container {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  header,
+  section .cta {
+    padding: 0 0 0 0;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header h3 {
+    font-size: 1.2rem;
   }
 }
 

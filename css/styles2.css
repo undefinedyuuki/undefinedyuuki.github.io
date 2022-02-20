@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  color: #343434;
+  background-image: url(../images/endless-constellation.svg);
   margin: 0;
   padding: 0;
   font-family: "Didact Gothic", sans-serif;
@@ -40,11 +40,14 @@ body {
 a {
   color: #009189;
   text-decoration: none;
+  transition-duration: 350ms;
+  transition-property: color, border-color;
+  transition-timing-fuction: ease-out;
 }
 a:hover {
-  text-decoration: none;
   color: #ddbc00;
   border-color: #ddbc00;
+  text-decoration: none;
 }
 h1 {
   font-size: 3rem;
@@ -77,10 +80,10 @@ li {
 .content-wrap {
   max-width: 75%;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 20px 0;
 }
-.divider > section {
-  border-bottom: 1px solid #bbb;
+.divider section {
+  border-bottom: 1.5px solid #ddd;
 }
 .divider > section:last-of-type {
   border-bottom: none;
@@ -101,18 +104,22 @@ li {
 }
 
 .header-polygon-shadow {
-  z-index: 1000;
+  z-index: 1;
   /* overflow: hidden; */
 }
 
 .header-polygon {
   color: black;
-  clip-path: polygon(1% 0, 100% 0, 100% 0, 10% 100%);
-  position: relative;
+  clip-path: polygon(1% 0, 100% 0, 100% 15%, 10% 100%);
+  position: absolute;
   background: #ededed;
-  height: 350px;
-  width: 95vw;
-  padding-bottom: -200px;
+  height: 375px;
+  width: 98vw;
+  /* padding-bottom: -200px; */
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   overflow: hidden;
 }
 
@@ -120,7 +127,7 @@ li {
   clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
   position: relative;
   background-color: #ededed;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   bottom: -15vh;
 }
@@ -129,13 +136,43 @@ li {
 
 /* Header
 ------------------------------------*/
+nav {
+  display: block;
+}
+.topnav {
+  display: flex;
+  background-color: #ededed;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  justify-content: flex-end;
+  text-align: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin-top: 0;
+  align-items: center;
+  box-shadow: 0 0 7px #333;
+  z-index: 2;
+  /* flex-direction: column; */
+  /* opacity: 90%; */
+}
+
+.topnav a {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 header svg {
   position: absolute;
   left: 350px;
 }
 header h1 {
   display: inline-block;
-  margin: 40px 0 0 7%;
+  margin: 90px 0 0 7%;
   font-size: 5rem;
   font-weight: 400;
 }
@@ -150,11 +187,11 @@ header h3 {
   margin: 5px 0 0 8.5%;
   font-size: 1.2rem;
 }
-header a {
+header .header-button {
   display: inline-block;
   position: absolute;
   left: 10vw;
-  top: 230px;
+  top: 275px;
 }
 .contact {
   color: #009189;
@@ -294,28 +331,34 @@ header a {
 }
 /* Contact Info
 ------------------------------------*/
-footer {
-  background: #ddd;
-  border-radius: 20px;
+.contact-info {
+  background-color: #ccc;
+  /* border-radius: 20px; */
   box-shadow: inset 0px 0px 4px dimgray;
   text-align: center;
-  margin: 70px 0 0 0;
   padding: 30px;
   font-size: inherit;
 }
-footer .contact {
+.contact-info .contact {
   font-size: 2rem;
 }
-footer h2 {
+.contact-info h2 {
   margin: 0 0 20px 0;
 }
-footer p {
+.contact-info p {
   font-size: 1.5rem;
 }
-footer ul {
+.contact-info ul {
   display: flex;
   justify-content: center;
   gap: 40px;
+}
+
+.copywrite {
+  margin-top: 0;
+  /* padding: 4px 0 4px; */
+  margin-top: 4px;
+  margin-bottom: 40px;
 }
 
 /* Responsive
@@ -334,7 +377,38 @@ footer ul {
   }
 }
 
-@media screen and (max-width: 849px) {
+@media screen and (max-width: 1200px) {
+  header h1 {
+    font-size: 3rem;
+    margin: 70px 0 0 6%;
+  }
+  header h2 {
+    font-size: 1.3rem;
+    margin: 0 0 0 7%;
+  }
+  header h3 {
+    font-size: 1rem;
+  }
+  header svg {
+    position: absolute;
+    left: 200px;
+  }
+  header .contact {
+    top: 190px;
+    font-size: 1.4rem;
+    border-width: 4px;
+  }
+  .header-polygon {
+    clip-path: polygon(0 0, 100% 0, 100% 21%, 10% 100%);
+    height: 280px;
+    overflow: hidden;
+    width: 97vw;
+  }
+  .main-polygon {
+    /* bottom: -3vh; */
+  }
+}
+@media screen and (max-width: 750px) {
   .about {
     font-size: 0.8rem;
     margin: 0 0 0 0;
@@ -345,32 +419,101 @@ footer ul {
   }
   header h1 {
     font-size: 3rem;
-    margin: 0 0 0 15px;
+    margin: 70px 0 0 6%;
   }
   header h2 {
     font-size: 1.3rem;
-    margin: 0 0 0 5%;
+    margin: 0 0 0 7%;
   }
   header h3 {
     font-size: 0.9rem;
-    color: #ededed;
+    display: none;
   }
   header svg {
     position: absolute;
     left: 40px;
   }
   header .contact {
-    top: 90px;
+    top: 160px;
     font-size: 1rem;
     border-width: 4px;
+    /* opacity: 0; */
   }
   .header-polygon {
-    clip-path: polygon(0 0, 100% 0, 100% 0, 10% 100%);
-    height: 180px;
+    clip-path: polygon(0 0, 100% 0, 100% 26%, 10% 100%);
+    height: 230px;
     overflow: hidden;
-    width: 90vw;
+    width: 97vw;
   }
   .main-polygon {
-    bottom: -3vh;
+    /* bottom: -3vh; */
+  }
+
+  .topnav {
+    flex-direction: column;
+    transition: 500ms ease-in-out;
+    position: fixed;
+    /* gap: 30px; */
+    font-size: 2rem;
+  }
+  .topnav li {
+    transform: translateY(-60px);
+    margin-top: 50px;
+  }
+  .icon {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+  }
+
+  nav a span {
+    position: fixed;
+    top: 28px;
+    right: 15px;
+    width: 30px;
+    height: 4px;
+    border-radius: 4px;
+    display: block;
+    background-color: #009189;
+    /* transition: 500ms; */
+    z-index: 999;
+  }
+  nav a span:first-child {
+    top: 18px;
+  }
+  nav a span:last-child {
+    top: 38px;
+  }
+  nav a span:hover {
+    background-color: #ddbc00;
+  }
+  .topnav.responsive {
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+  }
+  .topnav.responsive li {
+    margin-top: 50px;
+    justify-content: flex-start;
+  }
+  /* .topnav.responsive .icon {
+    position: fixed;
+    right: 0;
+    top: 15px;
+  } */
+}
+
+@media screen and (max-width: 430px) {
+  .header-polygon {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    height: 230px;
+    overflow: hidden;
+    width: 100vw;
+  }
+  .main-polygon {
+    bottom: -20vh;
   }
 }

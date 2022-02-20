@@ -8,41 +8,67 @@
       href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500&family=Didact+Gothic&family=Roboto+Condensed:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <!-- This is a link to the fonts used in this page from Google Fonts. -->
     <link rel="stylesheet" href="css/styles2.css" />
   </head>
   <body>
     <!-- ***********************  ABOUT / PROFILE  *********************** -->
 
-    <header class="header-polygon-shadow">
-      <div class="header-polygon">
-        <svg
-          width="1000"
-          height="1000"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            cx="25"
-            cy="75"
-            r="330"
-            stroke="#009189"
-            fill="none"
-            stroke-width="60"
-          />
-        </svg>
-        <h1>Michael Fisher</h1>
-        <h2>Front-end Web Developer</h2>
-        <h3>HTML | CSS | JavaScript | Email | Wordpress</h3>
-        <a href="#contact-destination" class="contact">Contact Me</a>
+    <header>
+      <nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <ul class="topnav" id="myTopnav">
+          <li><a href="#">Top</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Github</a></li>
+        </ul>
+      </nav>
+      <div class="header-polygon-shadow">
+        <div class="header-polygon">
+          <svg
+            width="1000"
+            height="1000"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="25"
+              cy="75"
+              r="330"
+              stroke="#009189"
+              fill="none"
+              stroke-width="60"
+            />
+          </svg>
+
+          <h1>Michael Fisher</h1>
+          <h2>Front-end Web Developer</h2>
+          <h3>HTML | CSS | JavaScript | Wordpress | PHP</h3>
+          <a href="#contact-destination" class="header-button contact"
+            >Portfolio</a
+          >
+        </div>
       </div>
     </header>
     <main class="main-polygon-shadow ">
       <div class="main-polygon">
-        <div class="content-wrap">
-          <!-- ********************  Profile  ********************* -->
+        <!-- ********************  Profile  ********************* -->
 
-          <section class="profile">
+        <section class="profile">
+          <div class="content-wrap">
             <h2>About&nbsp;me</h2>
             <div class="about">
               <p>
@@ -70,9 +96,11 @@
                 <li>Wordpress</li>
               </ul>
             </div>
-          </section>
-          <!-- ********************  Projects  ********************* -->
-          <section class="projects divider">
+          </div>
+        </section>
+        <!-- ********************  Projects  ********************* -->
+        <section class="projects divider">
+          <div class="content-wrap">
             <h2>Featured&nbsp;Projects</h2>
             <p class="preamble">
               Here are some things I've made. Alongside this landing page, these
@@ -295,12 +323,14 @@
                 </a>
               </div>
             </section>
-          </section>
+          </div>
+        </section>
 
-          <!-- ***********************  WORK EXPERIENCE  *********************** -->
+        <!-- ***********************  WORK EXPERIENCE  *********************** -->
 
-          <section class="work-experience">
-            <div class="- item-details divider">
+        <!-- <section class="work-experience">
+          <div class="content-wrap">
+            <div class=" item-details divider">
               <h2>Work&nbsp;Experience</h2>
               <p class="preamble">
                 Since I have recently exited my previous career in post-graduate
@@ -312,10 +342,10 @@
                   target="_blank"
                   >LinkedIn</a
                 >.
-              </p>
+              </p> -->
 
-              <!-- Work 1 -->
-              <section class="job-item">
+        <!-- Work 1 -->
+        <!-- <section class="job-item">
                 <div class="job-details">
                   <h3>Research&nbsp;Assistant</h3>
                   <p>Part-Time</p>
@@ -348,72 +378,87 @@
                 </div>
               </section>
             </div>
-          </section>
+          </div>
+        </section> -->
 
-          <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-          <section class="education">
-            <div class="item-details">
-              <h2>Education</h2>
-              <section class="education-item">
-                <h3>Southampton&nbsp;University</h3>
-                <p>Master in Social Research Methods, 2019 - 2020</p>
-              </section>
+        <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
+        <!-- <section class="education">
+          <div class="item-details">
+            <h2>Education</h2>
+            <section class="education-item">
+              <h3>Southampton&nbsp;University</h3>
+              <p>Master in Social Research Methods, 2019 - 2020</p>
+            </section>
 
-              <section class="education-item">
-                <h3>University&nbsp;of&nbsp;Portsmouth</h3>
-                <p>Master of Research in Science (MReS), 2017-2018</p>
-                <p>
-                  Human Geography research project exploring the role of Cafés
-                  and Co-Working spaces in the lives of freelance self-employed
-                </p>
-              </section>
-
-              <section class="education-item">
-                <h3>University&nbsp;of&nbsp;Portsmouth</h3>
-                <p>BSc Psychology</p>
-              </section>
-            </div>
-          </section>
-
-          <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-          <footer>
-            <div>
-              <h2>Interested in working with me?</h2>
-              <!-- Social media and contact links. Add or remove any networks. -->
-              <a
-                href="mailto:michaelfisher0451@gmail.com"
-                target="_blank"
-                id="contact-destination"
-                class="contact "
-                >Get In Touch</a
-              >
+            <section class="education-item">
+              <h3>University&nbsp;of&nbsp;Portsmouth</h3>
+              <p>Master of Research in Science (MReS), 2017-2018</p>
               <p>
-                I'm currently open for any freelance, part-time or full-time
-                projects.
+                Human Geography research project exploring the role of Cafés and
+                Co-Working spaces in the lives of freelance self-employed
               </p>
-              <ul class="contact-list">
-                <li>
-                  <a href="mailto:michaelfisher0451@gmail.com" target="_blank"
-                    >Email</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/michael-fisher-901704166/"
-                    target="_blank"
-                    >LinkedIn</a
-                  >
-                </li>
-                <li>
-                  <a href="https://github.com/undefinedyuuki" target="_blank"
-                    >Github</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </footer>
-        </div>
+            </section>
+
+            <section class="education-item">
+              <h3>University&nbsp;of&nbsp;Portsmouth</h3>
+              <p>BSc Psychology</p>
+            </section>
+          </div>
+        </section> -->
+
+        <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+        <footer>
+          <div class="contact-info">
+            <h2>Interested in working with me?</h2>
+            <!-- Social media and contact links. Add or remove any networks. -->
+            <a
+              href="mailto:michaelfisher0451@gmail.com"
+              target="_blank"
+              id="contact-destination"
+              class="contact "
+              >Get In Touch</a
+            >
+            <p>
+              I'm currently open for any freelance, part-time or full-time
+              projects.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <a href="mailto:michaelfisher0451@gmail.com" target="_blank"
+                  >Email</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/michael-fisher-901704166/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/undefinedyuuki" target="_blank"
+                  >Github</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="copywrite content-wrap">
+            <p>
+              Designed & coded by Michael Fisher
+            </p>
+          </div>
+        </footer>
       </div>
     </main>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
   </body>
 </html>

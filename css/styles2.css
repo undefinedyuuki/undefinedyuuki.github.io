@@ -37,14 +37,16 @@ body {
   z-index: -10;
 }
 
-a {
+a,
+.contact {
   color: #009189;
   text-decoration: none;
   transition-duration: 350ms;
   transition-property: color, border-color;
   transition-timing-fuction: ease-out;
 }
-a:hover {
+a:hover,
+.contact:hover {
   color: #ddbc00;
   border-color: #ddbc00;
   text-decoration: none;
@@ -69,6 +71,9 @@ h4 {
 .contact {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
+}
+p {
+  font-size: 1.3rem;
 }
 ul {
   padding: 0;
@@ -214,7 +219,7 @@ header .header-button {
   border-radius: 20px;
 }
 .about {
-  padding: 0 0 0 30%;
+  padding: 0 0 0 40%;
   margin-top: 40px;
 }
 .profile h2 {
@@ -247,6 +252,7 @@ header .header-button {
   text-align: right;
   font-weight: bold;
 }
+
 /* Projects
 ------------------------------------*/
 .projects h2,
@@ -271,8 +277,10 @@ header .header-button {
   margin-top: 20px;
   margin-bottom: 40px;
   margin-left: 40%;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-align: right;
+  font-weight: bold;
+  color: #009189;
 }
 .projects li {
   display: inline;
@@ -298,8 +306,9 @@ header .header-button {
   object-fit: cover;
   background-position: left;
   border-radius: 10px;
+  transition-duration: 350ms;
 }
-.project-image a:hover {
+.project-image img:hover {
   opacity: 0.6;
 }
 
@@ -331,27 +340,50 @@ header .header-button {
 }
 /* Contact Info
 ------------------------------------*/
+footer,
+footer a,
+footer h2 {
+  color: #ddd;
+}
+footer form label,
+footer form input,
+footer form textarea {
+  width: 90%;
+  display: block;
+  padding: 1.2rem 0.6rem 01rem;
+  margin: 30px 0 30px;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-family: inherit;
+}
+footer form textarea {
+  resize: none;
+  height: 150px;
+}
+
+.contact-container {
+  width: 70%;
+  display: block;
+}
+
 .contact-info {
-  background-color: #ccc;
-  /* border-radius: 20px; */
   box-shadow: inset 0px 0px 4px dimgray;
-  text-align: center;
-  padding: 30px;
+  background-color: #009189;
+  padding: 20px 0 20px;
+}
+.containter-form {
+  /* border-radius: 20px; */
+  text-align: left;
   font-size: inherit;
 }
-.contact-info .contact {
-  font-size: 2rem;
-}
-.contact-info h2 {
-  margin: 0 0 20px 0;
-}
-.contact-info p {
-  font-size: 1.5rem;
-}
-.contact-info ul {
+.container-social {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  padding-left: 45px;
+}
+
+.container-social ul {
+  flex-direction: column;
+  text-align: center;
 }
 
 .copywrite {
@@ -359,6 +391,16 @@ header .header-button {
   /* padding: 4px 0 4px; */
   margin-top: 4px;
   margin-bottom: 40px;
+  color: #009189;
+  text-align: center;
+}
+
+footer .contact {
+  color: #ddd;
+  border: 4px solid #ddd;
+  cursor: pointer;
+  background: none;
+  margin: 0 auto;
 }
 
 /* Responsive
@@ -375,9 +417,15 @@ header .header-button {
     display: flex;
     gap: 40px;
   }
+  .contact-container {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 1200px) {
+  .about {
+    padding: 0;
+  }
   header h1 {
     font-size: 3rem;
     margin: 70px 0 0 6%;
@@ -454,11 +502,13 @@ header .header-button {
     transition: 500ms ease-in-out;
     position: fixed;
     /* gap: 30px; */
-    font-size: 2rem;
+    justify-content: space-evenly;
   }
   .topnav li {
-    transform: translateY(-60px);
-    margin-top: 50px;
+    transform: translateY(-400px);
+    /* margin-top: 50px; */
+    transition: translatey, opacity, 500ms ease-in-out;
+    font-size: 3rem;
   }
   .icon {
     position: fixed;
@@ -493,17 +543,28 @@ header .header-button {
   .topnav.responsive {
     position: fixed;
     height: 100%;
-    width: 100vw;
+    /* width: 100vw; */
+    justify-content: space-evenly;
+    opacity: 90%;
   }
   .topnav.responsive li {
-    margin-top: 50px;
-    justify-content: flex-start;
-  9}
+    transform: translateY(0px);
+    align-items: center;
+  }
+
   /* .topnav.responsive .icon {
     position: fixed;
     right: 0;
     top: 15px;
   } */
+  .main-polygon {
+    /* bottom: -20vh; */
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .content-wrap {
+    margin: 0 auto;
+    min-width: 90%;
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -512,8 +573,5 @@ header .header-button {
     height: 230px;
     overflow: hidden;
     width: 100vw;
-  }
-  .main-polygon {
-    bottom: -20vh;
   }
 }

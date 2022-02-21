@@ -19,7 +19,7 @@
   <body>
     <!-- ***********************  ABOUT / PROFILE  *********************** -->
 
-    <header>
+    <header id="top-destination">
       <nav>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <span></span>
@@ -27,13 +27,17 @@
           <span></span>
         </a>
         <ul class="topnav" id="myTopnav">
-          <li><a href="#">Top</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">Github</a></li>
+          <li><a href="#top-destination">Top</a></li>
+          <li><a href="#about-destination">About</a></li>
+          <li><a href="#skills-destination">Skills</a></li>
+          <li><a href="#projects-desination">Projects</a></li>
+          <li><a href="#contact-destination">Contact</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/michael-fisher-901704166/"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="#">https://github.com/undefinedyuuki</a></li>
         </ul>
       </nav>
       <div class="header-polygon-shadow">
@@ -63,8 +67,8 @@
         </div>
       </div>
     </header>
-    <main class="main-polygon-shadow ">
-      <div class="main-polygon">
+    <main class="main-polygon-shadow" id="about-destination ">
+      <div class="main-polygon" id="skills-destination">
         <!-- ********************  Profile  ********************* -->
 
         <section class="profile">
@@ -83,32 +87,37 @@
                 other framework implementations, I look forward to working with
                 you to create beautiful responsive websites.
               </p>
+            </div>
+            <div class="core-skills">
               <p>
-                My core skills involve the creation of websites and email
-                templates via:
+                This is my current skillset:
               </p>
               <ul>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>
                 <li>React</li>
-                <li>Node.js</li>
+                <li>PHP</li>
                 <li>Wordpress</li>
               </ul>
             </div>
           </div>
         </section>
         <!-- ********************  Projects  ********************* -->
-        <section class="projects divider">
+        <section class="projects divider" id="projects-desination">
           <div class="content-wrap">
             <h2>Featured&nbsp;Projects</h2>
             <p class="preamble">
-              Here are some things I've made. Alongside this landing page, these
-              are all personal projects I've made from scratch to showcase my
-              work (that means no premade templates). I look forward to adding
-              your projects to this selection!
+              Here are some things I've made.
+            </p>
+            <p class="preamble">
+              Alongside this landing page, these are all personal projects I've
+              made from scratch to showcase my work (that means no premade
+              templates). I look forward to adding your projects to this
+              selection!
             </p>
             <!-- Project 1 -->
+
             <section class="project-container">
               <div class="project-text">
                 <h4 class="project-overline">Featured Project</h4>
@@ -126,7 +135,7 @@
                   styling, with an emphasis on textual infomration.
                 </p>
                 <ul class="project-includes-list">
-                  <li>Multiple Pages</li>
+                  <li>Multi-Page</li>
                   <li>Cross-Page Linking</li>
                   <li>Tables</li>
                   <li>Forms</li>
@@ -192,11 +201,12 @@
                 </h3>
                 <p>
                   This site design is a highly responsive, modular looking
-                  design that highlights core features. The website is fully
-                  scalable and responsive with consistent styling, with an
-                  emphasis on strong visuals and images.
+                  design that utilizes various flexbox properties. The website
+                  is fully scalable and responsive with consistent styling, with
+                  an emphasis on strong visuals and images.
                 </p>
                 <ul class="project-includes-list">
+                  <li>Flexbox</li>
                   <li>Highly Responsive</li>
                   <li>Image Gallery</li>
                   <li>Single Page Design</li>
@@ -263,7 +273,7 @@
                 <p>
                   This site design is a more minimal design using parallax
                   images scrolling, ideal for showcasing products or services.
-                  mThe website is fully scalable and responsive with consistent
+                  The website is fully scalable and responsive with consistent
                   styling, with an emphasis on a strong scrolling experience.
                 </p>
                 <ul class="project-includes-list">
@@ -408,43 +418,59 @@
 
         <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
         <footer>
-          <div class="contact-info">
-            <h2>Interested in working with me?</h2>
+          <section class="contact-info" id="contact-destination">
             <!-- Social media and contact links. Add or remove any networks. -->
-            <a
-              href="mailto:michaelfisher0451@gmail.com"
-              target="_blank"
-              id="contact-destination"
-              class="contact "
-              >Get In Touch</a
-            >
-            <p>
-              I'm currently open for any freelance, part-time or full-time
-              projects.
-            </p>
-            <ul class="contact-list">
-              <li>
-                <a href="mailto:michaelfisher0451@gmail.com" target="_blank"
-                  >Email</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/michael-fisher-901704166/"
-                  target="_blank"
-                  >LinkedIn</a
-                >
-              </li>
-              <li>
-                <a href="https://github.com/undefinedyuuki" target="_blank"
-                  >Github</a
-                >
-              </li>
-            </ul>
-          </div>
+            <div class="content-wrap">
+              <div class="contact-container">
+                <div class="container-form">
+                  <h2>Interested in working with me?</h2>
+                  <p>
+                    I'm currently open for any freelance, part-time or full-time
+                    projects.
+                  </p>
+                  <p>
+                    Fill in your info in the form below and I look forward to
+                    hearing from you!
+                  </p>
+                  <form action="https://formspree.io/f/mjvlwpqg" method="POST">
+                    <div class="field">
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        required="required"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="field">
+                      <input
+                        type="email"
+                        name="_replyto"
+                        id="email"
+                        required="required"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="field">
+                      <textarea
+                        type="textbox"
+                        name="message"
+                        id="message"
+                        required="required"
+                        placeholder="Message"
+                      ></textarea>
+                    </div>
+                    <button class="contact" value="send">
+                      <span>Send email</span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
           <div class="copywrite content-wrap">
             <p>
-              Designed & coded by Michael Fisher
+              Designed & coded by Michael Fisher | 0451
             </p>
           </div>
         </footer>

@@ -574,4 +574,7 @@ footer .contact {
     overflow: hidden;
     width: 100vw;
   }
+  .main-polygon {
+    bottom: -20vh;
+  }
 }

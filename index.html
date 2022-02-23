@@ -3,516 +3,428 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michael Fisher CSS Portfolio</title>
+    <title>Michael Fisher Portfolio</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500&family=Didact+Gothic&family=Roboto+Condensed:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
-    <!-- This is a link to the fonts used in this page from Google Fonts. -->
-    <link rel="stylesheet" href="css/styles2.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
+
   <body>
-    <!-- ***********************  ABOUT / PROFILE  *********************** -->
+    <nav>
+      <!-- navigation -->
+      <a href="javascript:void(0);" class="menu" onclick="myFunction()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <ul class="navigation" id="navigation-target">
+        <li><a href="#top-destination" onclick="myFunction()">Top</a></li>
+        <li><a href="#about-destination" onclick="myFunction()">About</a></li>
+        <li>
+          <a href="#projects-destination" onclick="myFunction()">Projects</a>
+        </li>
+        <li>
+          <a href="#contact-destination" onclick="myFunction()">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-    <header id="top-destination">
-      <nav>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-        <ul class="topnav" id="myTopnav">
-          <li><a href="#top-destination" onclick="myFunction()">Top</a></li>
-          <li><a href="#about-destination" onclick="myFunction()">About</a></li>
-          <li>
-            <a href="#skills-destination" onclick="myFunction()">Skills</a>
-          </li>
-          <li>
-            <a href="#projects-desination" onclick="myFunction()">Projects</a>
-          </li>
-          <li>
-            <a href="#contact-destination" onclick="myFunction()">Contact</a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/michael-fisher-901704166/"
-              onclick="myFunction()"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/undefinedyuuki" onclick="myFunction()"
-              >Github</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="header-polygon-shadow">
-        <div class="header-polygon">
-          <svg
-            width="1000"
-            height="1000"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="25"
-              cy="75"
-              r="330"
-              stroke="#009189"
-              fill="none"
-              stroke-width="60"
-            />
-          </svg>
-
-          <h1>Michael Fisher</h1>
-          <h2>Front-end Web Developer</h2>
-          <h3>HTML | CSS | JavaScript | Wordpress | PHP</h3>
-          <a href="#contact-destination" class="header-button contact"
-            >Portfolio</a
-          >
+    <header class="flex-container" id="top-destination">
+      <div class="content-wrap">
+        <div class="hero">
+          <!-- fullpage title spread -->
+          <h1 class="name">Michael<br />F<span class="i">i</span>sher</h1>
+          <h2>Front-end Developer + Designer</h2>
+          <p>
+            An up-and-coming front-end web developer with an eye for design. My
+            work emphasizes the building of streamlined responsive websites with
+            a serving of graphic + UX design.
+          </p>
         </div>
       </div>
     </header>
-    <main class="main-polygon-shadow" id="about-destination">
-      <div class="main-polygon" id="skills-destination">
-        <!-- ********************  Profile  ********************* -->
+    <main class="slanted">
+      <!-- about -->
+      <section class="about" id="about-destination">
+        <div class="content-wrap">
+          <h3 class="numbered-heading">About me</h3>
 
-        <section class="profile">
-          <div class="content-wrap">
-            <h2>About&nbsp;me</h2>
-            <div class="about">
-              <p>
-                I’m a recently graduated postgraduate researcher from
-                Southampton University. I’ve received strong organizational and
-                communicative skills that I’ve demonstrated in my research
-                degrees, but am now looking for work in front-end development.
-                This transition has been self-taught, but I am extremelly driven
-                to learn, improve and adapt my skills in front-end web
-                development.
-              </p>
+          <div class="flex-container">
+            <picture class="image-wrapper flex-item">
+              <img
+                src="images/thumbnail-1.jpg"
+                width="300px"
+                height="300px"
+                alt="Photo of Michael"
+              />
+            </picture>
 
-              <p>
-                With a background interests in UX design, architecture and
-                programming, my passion for design has led me to develop a
-                strong intermediate foundation in creating functional and
-                stylish websites using HTML and CSS, without sacrificing
-                accesibility.
-              </p>
-              <p>
-                While I am still deep in the process of learning JavaScript and
-                other framework implementations, I look forward to working with
-                you to create beautiful responsive websites.
-              </p>
+            <div class="flex-container">
+              <div class="flex-item">
+                <p>
+                  I’m a recently graduated postgraduate researcher in Economic
+                  Geography, but am now looking for work in front-end
+                  development. This transition has been a self-taught endeavour
+                  over the last year, but I am extremelly driven to learn,
+                  improve and adapt my skills in front-end web development.
+                </p>
+                <p>
+                  Aside from my academic work, my personal hobbies in graphic
+                  design, typography and UX design lead my ultimate aim to both
+                  design and construct highly functional and stylish websites
+                  without sacrificing accesibility.
+                </p>
+                <p>
+                  While I am still deep in the process of learning JavaScript
+                  and other framework implementations, I look forward to working
+                  with you to create beautiful responsive websites.
+                </p>
+              </div>
+              <div class="flex-item">
+                <p class="skills">
+                  This is my current skillset:
+                </p>
+                <ul class="skillsgrid">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>React</li>
+                  <li>Wordpress</li>
+                  <li>Photoshop</li>
+                  <li>Illustrator</li>
+                </ul>
+              </div>
             </div>
-            <div class="core-skills">
+          </div>
+        </div>
+      </section>
+      <!-- projects -->
+      <section class="projects" id="projects-destination">
+        <div class="content-wrap divider">
+          <h3 class="numbered-heading">Featured Projects</h3>
+          <p class="preamble">Here are some things I've made.</p>
+          <!-- project 1 -->
+          <section class="flex-container">
+            <div class="project-text flex-item">
+              <h4>Featured Project</h4>
+              <h2 class="project-item">
+                <a href="conference/index.html" target="_blank"
+                  >Conference Website</a
+                >
+              </h2>
               <p>
-                This is my current skillset:
+                This multi-page site displays information for a mock-conference,
+                including a schedule of the event using tables, individual
+                speaker bios, google maps implementation for the venue location,
+                and a form for booking tickets. The website is fully scalable
+                and responsive with consistent styling, with an emphasis on
+                textual infomration.
               </p>
+              <ul class="project-includes-list">
+                <li>Multi-Page</li>
+                <li>Cross-Page Linking</li>
+                <li>Tables</li>
+                <li>Forms</li>
+              </ul>
+              <div class="project-links">
+                <!-- github svg link -->
+                <a
+                  href="undefinedyuuki.github.io/portfolio-item-conference"
+                  target="_blank"
+                  <a
+                  href="https://github.com/undefinedyuuki/portfolio-item-conference"
+                  target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-github"
+                  >
+                    <title>GitHub</title>
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path></svg
+                ></a>
+                <!-- direct link -->
+                <a
+                  href="conference/index.html"
+                  target="_blank"
+                  <a
+                  href="conference/index.html"
+                  target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-external-link"
+                  >
+                    <title>External Link</title>
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line></svg
+                ></a>
+              </div>
+            </div>
+            <div class="flex-item project-image">
+              <a href="conference/index.html" target="_blank">
+                <img
+                  src="images/Conferences-img-700px.png"
+                  alt="Conference Style Website"
+                  width="700px"
+                />
+              </a>
+            </div>
+          </section>
+          <!-- project 2 -->
+          <section class="flex-container">
+            <div class="project-text flex-item">
+              <h4>Featured Project</h4>
+              <h2 class="project-item">
+                <a href="restaurant/index.html" target="_blank"
+                  >Flexbox-taurant</a
+                >
+              </h2>
+              <p>
+                This site design is a highly responsive, modular looking design
+                that utilizes various flexbox properties. The website is fully
+                scalable and responsive with consistent styling, with an
+                emphasis on strong visuals and images.
+              </p>
+              <ul class="project-includes-list">
+                <li>Flexbox</li>
+                <li>Highly Responsive</li>
+                <li>Image Gallery</li>
+                <li>Single Page Design</li>
+              </ul>
+              <div class="project-links">
+                <!-- github svg link -->
+                <a
+                  href="undefinedyuuki.github.io/portfolio-item-conference"
+                  target="_blank"
+                  <a
+                  href="https://github.com/undefinedyuuki/portfolio-item-conference"
+                  target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-github"
+                  >
+                    <title>GitHub</title>
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path></svg
+                ></a>
+                <!-- direct link -->
+                <a
+                  href="conference/index.html"
+                  target="_blank"
+                  <a
+                  href="conference/index.html"
+                  target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-external-link"
+                  >
+                    <title>External Link</title>
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line></svg
+                ></a>
+              </div>
+            </div>
+            <div class="flex-item project-image">
+              <a href="restaurant/index.html" target="_blank">
+                <img
+                  src="images/restaurant-img-700px.png"
+                  alt="Conference Style Website"
+                  width="700px"
+                />
+              </a>
+            </div>
+          </section>
+          <!-- project 3 -->
+          <section class="flex-container">
+            <div class="project-text flex-item">
+              <h4>Featured Project</h4>
+              <h2 class="project-item">
+                <a href="myproduct/index.html" target="_blank">Parallax</a>
+              </h2>
+              <p>
+                This site design is a more minimal design using parallax images
+                scrolling, ideal for showcasing products or services. The
+                website is fully scalable and responsive with consistent
+                styling, with an emphasis on a strong scrolling experience.
+              </p>
+              <ul class="project-includes-list">
+                <li>Parallax Scrolling</li>
+                <li>Single Page Design</li>
+                <li>In-page Linking</li>
+                <li>Sticky Navigation Bar</li>
+              </ul>
+              <div class="project-links">
+                <!-- github svg link -->
+                <a
+                  href="undefinedyuuki.github.io/portfolio-item-conference"
+                  target="_blank"
+                  <a
+                  href="https://github.com/undefinedyuuki/portfolio-item-conference"
+                  target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-github"
+                  >
+                    <title>GitHub</title>
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path></svg
+                ></a>
+                <!-- direct link -->
+                <a
+                  href="conference/index.html"
+                  target="_blank"
+                  <a
+                  href="conference/index.html"
+                  target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-external-link"
+                  >
+                    <title>External Link</title>
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line></svg
+                ></a>
+              </div>
+            </div>
+            <div class="flex-item project-image">
+              <a href="myproduct/index.html" target="_blank">
+                <img
+                  src="images/Parallax-img-700px.png"
+                  alt="Conference Style Website"
+                  width="700px"
+                />
+              </a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact" id="contact-destination">
+        <div class="content-wrap">
+          <h3 class="numbered-heading">Get In Touch</h3>
+          <div class="flex-container">
+            <div class="flex-item">
+              <p>
+                I'm currently looking for work in any freelance, part-time or
+                full-time front-end web development position.
+              </p>
+              <p>
+                Feel free to contact me on any of my social media platforms, or
+                send me a message below, and we'll get chatting.
+              </p>
+              <form action="https://formspree.io/f/mjvlwpqg" method="POST">
+                <div class="field">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required="required"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="field">
+                  <input
+                    type="email"
+                    name="_replyto"
+                    id="email"
+                    required="required"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="field">
+                  <textarea
+                    type="textbox"
+                    name="message"
+                    id="message"
+                    required="required"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <button class="contact" value="send">
+                  <span>Send</span>
+                </button>
+              </form>
+            </div>
+            <div class="flex-item">
               <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>React</li>
-                <li>PHP</li>
-                <li>Wordpress</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
               </ul>
             </div>
           </div>
-        </section>
-        <!-- ********************  Projects  ********************* -->
-        <section class="projects divider" id="projects-desination">
-          <div class="content-wrap">
-            <h2>Featured&nbsp;Projects</h2>
-            <p class="preamble">
-              Here are some things I've made.
-            </p>
-            <p class="preamble">
-              Alongside this landing page, these are all personal projects I've
-              made from scratch to showcase my work (that means no premade
-              templates). I look forward to adding your projects to this
-              selection!
-            </p>
-            <!-- Project 1 -->
+        </div>
+      </section>
 
-            <section class="project-container">
-              <div class="project-text">
-                <h4 class="project-overline">Featured Project</h4>
-                <h3 class="project-title">
-                  <a href="conference/index.html" target="_blank"
-                    >Conference Website</a
-                  >
-                </h3>
-                <p>
-                  This multi-page site displays information for a
-                  mock-conference, including a schedule of the event using
-                  tables, individual speaker bios, google maps implementation
-                  for the venue location, and a form for booking tickets. The
-                  website is fully scalable and responsive with consistent
-                  styling, with an emphasis on textual infomration.
-                </p>
-                <ul class="project-includes-list">
-                  <li>Multi-Page</li>
-                  <li>Cross-Page Linking</li>
-                  <li>Tables</li>
-                  <li>Forms</li>
-                </ul>
-                <div class="project-links">
-                  <a
-                    href="undefinedyuuki.github.io/portfolio-item-conference"
-                    target="_blank"
-                    <a
-                    href="https://github.com/undefinedyuuki/portfolio-item-conference"
-                    target="_blank"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="feather feather-github"
-                    >
-                      <title>GitHub</title>
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                      ></path></svg
-                  ></a>
-                  <a
-                    href="conference/index.html"
-                    target="_blank"
-                    <a
-                    href="conference/index.html"
-                    target="_blank"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="feather feather-external-link"
-                    >
-                      <title>External Link</title>
-                      <path
-                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                      ></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line></svg
-                  ></a>
-                </div>
-              </div>
-              <div class="project-image">
-                <a href="conference/index.html" target="_blank">
-                  <img
-                    src="images/Conferences-img-700px.png"
-                    alt="Conference Style Website"
-                    width="700px"
-                  />
-                </a>
-              </div>
-            </section>
-
-            <!-- Project 2 -->
-            <section class="project-container">
-              <div class="project-text">
-                <h4 class="project-overline">Featured Project</h4>
-                <h3 class="project-title">
-                  <a href="restaurant/index.html" target="_blank">Restaurant</a>
-                </h3>
-                <p>
-                  This site design is a highly responsive, modular looking
-                  design that utilizes various flexbox properties. The website
-                  is fully scalable and responsive with consistent styling, with
-                  an emphasis on strong visuals and images.
-                </p>
-                <ul class="project-includes-list">
-                  <li>Flexbox</li>
-                  <li>Highly Responsive</li>
-                  <li>Image Gallery</li>
-                  <li>Single Page Design</li>
-                </ul>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/undefinedyuuki/portfolio-item-restaurant"
-                    target="_blank"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="feather feather-github"
-                    >
-                      <title>GitHub</title>
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                      ></path></svg
-                  ></a>
-                  <a href="restaurant/index.html" target="_blank"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="feather feather-external-link"
-                    >
-                      <title>External Link</title>
-                      <path
-                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                      ></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line></svg
-                  ></a>
-                </div>
-              </div>
-              <div class="project-image">
-                <a href="restaurant/index.html" target="_blank">
-                  <img
-                    src="images/Restaurant-img-700px.png"
-                    alt="Restaurant Style Website"
-                    width="700px"
-                  />
-                </a>
-              </div>
-            </section>
-
-            <!-- Project 3 -->
-            <section class="project-container">
-              <div class="project-text">
-                <h4 class="project-overline">Featured Project</h4>
-                <h3 class="project-title">
-                  <a href="myproduct/index.html" target="_blank">Parallax</a>
-                </h3>
-                <p>
-                  This site design is a more minimal design using parallax
-                  images scrolling, ideal for showcasing products or services.
-                  The website is fully scalable and responsive with consistent
-                  styling, with an emphasis on a strong scrolling experience.
-                </p>
-                <ul class="project-includes-list">
-                  <li>Parallax Scrolling</li>
-                  <li>Single Page Design</li>
-                  <li>In-page Linking</li>
-                  <li>Sticky Navigation Bar</li>
-                </ul>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/undefinedyuuki/portfolio-item-myproduct"
-                    target="_blank"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="feather feather-github"
-                    >
-                      <title>GitHub</title>
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                      ></path></svg
-                  ></a>
-                  <a href="myproduct/index.html" target="_blank"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="feather feather-external-link"
-                    >
-                      <title>External Link</title>
-                      <path
-                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                      ></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line></svg
-                  ></a>
-                </div>
-              </div>
-              <div class="project-image">
-                <a href="myproduct/index.html" target="_blank">
-                  <img
-                    src="images/Parallax-img-700px.png"
-                    alt="Conference Style Website"
-                    width="700px"
-                  />
-                </a>
-              </div>
-            </section>
-          </div>
-        </section>
-
-        <!-- ***********************  WORK EXPERIENCE  *********************** -->
-
-        <!-- <section class="work-experience">
-          <div class="content-wrap">
-            <div class=" item-details divider">
-              <h2>Work&nbsp;Experience</h2>
-              <p class="preamble">
-                Since I have recently exited my previous career in post-graduate
-                research, my work-experience is largely individual academic
-                research projects during my degree. See my complete work history
-                on
-                <a
-                  href="https://www.linkedin.com/in/michael-fisher-901704166/"
-                  target="_blank"
-                  >LinkedIn</a
-                >.
-              </p> -->
-
-        <!-- Work 1 -->
-        <!-- <section class="job-item">
-                <div class="job-details">
-                  <h3>Research&nbsp;Assistant</h3>
-                  <p>Part-Time</p>
-                  <p>Febuary 2019 - September 2021</p>
-                </div>
-                <div class="job-summary">
-                  <ul>
-                    <li>
-                      Completed various roles as an interviewer, analyst and
-                      editor for an economic geography research project as part
-                      of an international research team.
-                    </li>
-                    <li>
-                      Conducted, transcribed and reported on interviews with a
-                      variety of entrepreneurs across europe to inform the
-                      analysis and publication of an academic article.
-                    </li>
-                    <li>
-                      Involved extensive databse usage, API coding, in addition
-                      to specialozed academic software such as Nvivo and
-                      Endnote.
-                    </li>
-                  </ul>
-                  <p>
-                    See more at
-                    <a href="http://workandhome.ac.uk/" target="_blank"
-                      >workandhome.ac.uk</a
-                    >.
-                  </p>
-                </div>
-              </section>
-            </div>
-          </div>
-        </section> -->
-
-        <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-        <!-- <section class="education">
-          <div class="item-details">
-            <h2>Education</h2>
-            <section class="education-item">
-              <h3>Southampton&nbsp;University</h3>
-              <p>Master in Social Research Methods, 2019 - 2020</p>
-            </section>
-
-            <section class="education-item">
-              <h3>University&nbsp;of&nbsp;Portsmouth</h3>
-              <p>Master of Research in Science (MReS), 2017-2018</p>
-              <p>
-                Human Geography research project exploring the role of Cafés and
-                Co-Working spaces in the lives of freelance self-employed
-              </p>
-            </section>
-
-            <section class="education-item">
-              <h3>University&nbsp;of&nbsp;Portsmouth</h3>
-              <p>BSc Psychology</p>
-            </section>
-          </div>
-        </section> -->
-
-        <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-        <footer>
-          <section class="contact-info" id="contact-destination">
-            <!-- Social media and contact links. Add or remove any networks. -->
-            <div class="content-wrap">
-              <div class="contact-container">
-                <div class="container-form">
-                  <h2>Interested in working with me?</h2>
-                  <p>
-                    I'm currently open for any freelance, part-time or full-time
-                    projects.
-                  </p>
-                  <p>
-                    Fill in your info in the form below and I look forward to
-                    hearing from you!
-                  </p>
-                  <form action="https://formspree.io/f/mjvlwpqg" method="POST">
-                    <div class="field">
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        required="required"
-                        placeholder="Name"
-                      />
-                    </div>
-                    <div class="field">
-                      <input
-                        type="email"
-                        name="_replyto"
-                        id="email"
-                        required="required"
-                        placeholder="Email"
-                      />
-                    </div>
-                    <div class="field">
-                      <textarea
-                        type="textbox"
-                        name="message"
-                        id="message"
-                        required="required"
-                        placeholder="Message"
-                      ></textarea>
-                    </div>
-                    <button class="contact" value="send">
-                      <span>Send email</span>
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </section>
-          <div class="copywrite content-wrap">
-            <p>
-              Designed & coded by Michael Fisher | 0451
-            </p>
-          </div>
-        </footer>
-      </div>
+      <footer class="content-wrap">
+        <p>Designed & coded by Michael Fisher | 0451</p>
+      </footer>
     </main>
     <script>
       function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
+        var x = document.getElementById("navigation-target");
+        if (x.className === "navigation") {
           x.className += " responsive";
         } else {
-          x.className = "topnav";
+          x.className = "navigation";
         }
       }
     </script>

@@ -105,7 +105,6 @@ li {
 .main-polygon-shadow {
   filter: drop-shadow(0px 0px 7px #333);
   position: absolute;
-  /* overflow: hidden; */
 }
 
 .header-polygon-shadow {
@@ -120,12 +119,12 @@ li {
   background: #ededed;
   height: 375px;
   width: 98vw;
-  /* padding-bottom: -200px; */
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   overflow: hidden;
+  z-index: 10;
 }
 
 .main-polygon {
@@ -134,7 +133,7 @@ li {
   background-color: #ededed;
   width: 95%;
   margin: 0 auto;
-  bottom: -15vh;
+  top: 10em;
 }
 
 /* NTS: In order to change the z-index of clip-path/filter drop-shadows, you must give them a position value other than static. Otherwise they will layer in HTML order. */

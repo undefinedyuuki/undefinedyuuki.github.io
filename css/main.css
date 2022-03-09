@@ -348,4 +348,10 @@ button {
   .about .flex-container .flex-container {
     margin: 0;
   }
+  .contact form label,
+  .contact form input,
+  .contact form textarea {
+    min-width: 300px;
+    max-width: 300px;
+  }
 }

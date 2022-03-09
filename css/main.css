@@ -290,6 +290,9 @@ footer {
   color: #009189;
   text-align: center;
 }
+footer p {
+  margin-top: 30px;
+}
 
 button {
   color: #009189;

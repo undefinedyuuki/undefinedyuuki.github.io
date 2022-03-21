@@ -355,3 +355,7 @@ button {
     max-width: 300px;
   }
 }
+
+.html5 {
+  content: "\e7f7";
+}

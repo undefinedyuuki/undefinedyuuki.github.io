@@ -56,6 +56,9 @@ button:hover {
   border-color: #ddbc00;
   cursor: pointer;
 }
+ul {
+  padding-left: 0;
+}
 li {
   list-style: none;
 }
@@ -63,7 +66,7 @@ li {
 .content-wrap {
   max-width: 900px;
   margin: 0 auto;
-  width: 90%;
+  width: 85%;
 }
 
 .numbered-heading {
@@ -82,6 +85,7 @@ li {
   background: #aaa;
   /* white-space: nowrap; */
 }
+
 .divider .flex-container {
   border-bottom: 1.5px solid #aaa;
   padding: 40px 0;
@@ -133,7 +137,7 @@ nav a span {
   border-radius: 4px;
   display: block;
   background-color: #252525;
-  transition: 300ms;
+  transition: 500ms;
   z-index: 999;
 }
 nav a span:first-child {
@@ -214,11 +218,19 @@ header {
   text-align: right;
   justify-content: space-between;
 }
-.skillsgrid {
-  display: grid;
-  grid-template-columns: repeat(4, 30%);
-  grid-row-gap: 20px;
-  justify-content: flex-end;
+/* skills */
+.skills-text {
+  margin: 0 0 50px 0;
+  text-align: right;
+}
+.icons {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 0;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 /* projects */
@@ -282,7 +294,7 @@ header {
   height: 150px;
 }
 footer {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   margin-top: 0;
   /* padding: 4px 0 4px; */
   margin-top: 4px;
@@ -291,7 +303,7 @@ footer {
   text-align: center;
 }
 footer p {
-  margin-top: 30px;
+  margin: 50px 0 5px 0;
 }
 
 button {
@@ -354,8 +366,4 @@ button {
     min-width: 300px;
     max-width: 300px;
   }
-}
-
-.html5 {
-  content: "\e7f7";
 }

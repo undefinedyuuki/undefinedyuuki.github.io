@@ -229,8 +229,11 @@ header {
   flex-wrap: wrap;
   flex-direction: row;
   padding-left: 0;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: space-around;
+}
+.icons li {
+  flex: 1 0 20%;
+  margin: 0 0 40px 0;
 }
 
 /* projects */

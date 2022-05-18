@@ -179,22 +179,20 @@ header {
 .slanted {
   position: relative;
   background-color: #ddd;
-  width: 100vw;
-  height: auto;
-  /* padding-top: 40px; */
-  /* margin-top: 40px; */
+  width: 100%;
   filter: drop-shadow(0 0 5px black);
 }
-.slanted::before {
+
+.slanted::after {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background: inherit;
   content: "";
   z-index: -1;
-  inset: 0 0 0 0;
+  bottom: 0;
   transform-origin: top right;
-  transform: skewy(5deg);
+  transform: skewy(4deg);
 }
 .about .numbered-heading {
   font-size: 3em;
@@ -287,14 +285,14 @@ header {
   max-width: 500px;
   display: block;
   padding: 0.5rem 0 0.5 1rem;
-  margin: 30px 0 30px;
+  margin: 30px 0 15px;
   font-size: 1.1rem;
-  font-style: italic;
   font-family: inherit;
+  padding-left: 5px;
 }
 .contact form textarea {
   resize: none;
-  height: 150px;
+  height: 100px;
 }
 footer {
   padding-bottom: 10px;
@@ -312,8 +310,9 @@ footer p {
 button {
   color: #009189;
   background: none;
-  border: 4px solid #009189;
-  font-size: 3rem;
+  border: 3px solid #009189;
+  padding: 0 0.5rem 0 0.5rem;
+  font-size: 1.2rem;
   text-decoration: none;
   transition-duration: 350ms;
   transition-property: color, border-color;

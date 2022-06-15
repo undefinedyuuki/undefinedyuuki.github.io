@@ -1,6 +1,8 @@
 /* *************** Global */
 html {
   font-family: "PT Sans", sans-serif;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -39,6 +41,10 @@ li {
 img {
   max-width: 500px;
 }
+section {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 .btn {
   padding: 13px;
   text-decoration: none;
@@ -64,6 +70,7 @@ nav {
   margin: 0 0 25vh 0;
   display: block;
   width: 100%;
+  z-index: 1;
 }
 nav ul {
   margin: 0;
@@ -80,7 +87,8 @@ nav li:hover {
 
 /* *************** Title */
 .header {
-  background-image: url(../images/parallax-bg1.jpeg);
+  background-image: url(../images/parallax-bg1.jpg);
+  background-size: cover;
   min-height: 100vh;
 }
 .title {
@@ -91,9 +99,10 @@ nav li:hover {
 }
 /* *************** CTA */
 .overview {
-  background-color: #252529;
-  color: white;
+  background-image: url(../images/parallax-bg2.jpg);
+  color: black;
   margin: 0;
+  padding-top: 15vh;
 }
 .overview h2 {
   font-size: 2.5rem;
@@ -130,13 +139,50 @@ nav li:hover {
 }
 /* *************** Info */
 .info {
-  background-image: url(../images/parallax-bg2.jpg);
-  min-height: 400px;
+  background-image: url(../images/parallax-bg3.jpg);
   color: white;
   padding: 10rem 0;
 }
 
-.info .container {
+.carousel-text li {
+  font-size: 2rem;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0px;
+  top: 40%;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.5s ease-in;
+}
+.carousel-text li.selected {
+  opacity: 1;
+  transform: scale(0.99);
+  transition: all 0.5s ease-in;
+}
+.carousel-breadcrumb {
+  display: flex;
+  height: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0px;
+}
+
+.breadcrumb {
+  background-color: rgb(204, 204, 204);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 15px;
+  transition: all 0.1s ease-in;
+}
+.breadcrumb.selected {
+  background-color: black;
 }
 
 /* *************** Gift Card */
@@ -172,6 +218,7 @@ nav li:hover {
 footer {
   margin: 0;
   background-color: #252529;
+  scroll-snap-align: start end;
 }
 .foot-nav {
   color: white;
@@ -214,6 +261,10 @@ footer {
   }
   .flex-img img {
     margin: 0 30px 0 0;
+  }
+
+  section {
+    scroll-snap-align: start;
   }
 }
 @media screen and (min-width: 520px) {

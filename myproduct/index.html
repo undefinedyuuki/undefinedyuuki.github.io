@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
   </head>
 </html>
 <body>
@@ -37,18 +39,18 @@
     </header>
     <!-- ********************** Title -->
     <section class="title container">
-      <h1>myProduct</h1>
-      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In.</h2>
+      <h1>Snappy-Parallax Site</h1>
+
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eleifend
-        tortor eget tortor consequat ultrices. Nulla ut lectus hendrerit,
-        iaculis lectus vel, efficitur lorem. Suspendisse potenti.
+        This site uses a combination of css and jQuery to snap scrolling between
+        sections, create a parallax effect for image backgrounds, and includes a
+        fancy carousel; great for testimonials.
       </p>
     </section>
   </div>
 
   <!-- ********************** CTA -->
-  <section class="overview">
+  <section class="overview showcase">
     <div class="container">
       <h2>Overview</h2>
       <h3>Lorem ipsum dolor sit amet.</h3>
@@ -59,63 +61,35 @@
         vitae, volutpat nulla. Aliquam varius, magna non rhoncus sagittis, diam
         ante biam.
       </p>
-      <a href="#" class="btn">Start Trial Now</a>
+      <a href="#" class="btn">Call To Action</a>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget.
       </p>
-      <img src="images/promo1.png" alt="Product on display" />
     </div>
   </section>
-  <!-- ********************** Features -->
-  <section class="features">
-    <div class="container">
-      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing integer.</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-        sodales tempus scelerisque. Sed rhoncus molestie neque vitae accumsan.
-        In tempor eros diam, sed scelerisque lacus efficitur ac. Mauris rutrum
-        quis est nec imperdiet.
-      </p>
-      <a href="#" class="btn">Read More</a>
-      <img src="images/promo2.png" width="100%" alt="Product on display" />
-    </div>
-  </section>
-  <!-- ********************** Info -->
+  <!-- ********************** Info w/ carousel -->
   <section class="info showcase">
-    <div class="container">
-      <h3>Lorem ipsum dolor sit amet, consectetur orci aliquam.</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis pretium
-        erat. Donec et enim arcu. Donec aliquet fringilla ligula quis euismod.
-        Nunc in augue at libero ultrices porta. Suspendisse molestie leo ligula,
-        in blandit ipsum vehicula eget. Vestibulum et cursus diam, ut hendrerit
-        justo. Quisque molestie augue id purus vestibulum convallis. Vestibulum
-        rhoncus morbi.
-      </p>
+    <div class="carousel">
+      <div class="carousel-text">
+        <ul>
+          <li>This is a fancy scrolling caoursel. Great for testimonials</li>
+          <li>
+            It scrolls automatically, but you can click below to see each quote
+            individually
+          </li>
+          <li>
+            And even after clicking, it loops correctly for eacah position.
+          </li>
+          <li>That's pretty cool. Hell, that's pretty good</li>
+          <li>Tell that to the whole dangm neighborhood.</li>
+          <li>And all the people go 'dangm' hell, that's pretty weird.</li>
+          <li>But it seems so logical. so sensible.</li>
+        </ul>
+      </div>
+      <div class="arrow"></div>
     </div>
   </section>
-  <!-- ********************** Gift Card -->
-  <section class="gift-card">
-    <div class="container">
-      <div class="flex-img">
-        <img src="images/gift-card.png" width="400px" alt="Gift Card" />
-      </div>
-      <div class="flex-text">
-        <h2>Gift Cards</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
-          expedita tempore quasi omnis a aut et totam illo fuga accusamus
-          dolorum vero, ut harum consectetur. Minima molestias officiis culpa
-          non sed dicta itaque. Et aliquam illo obcaecati molestias veritatis
-          porro.
-        </p>
-        <p>Lorem ipsum dolor sit amet, consectetur placerat.</p>
-        <hr />
 
-        <a href="#">> Redeem</a>
-      </div>
-    </div>
-  </section>
   <!-- ********************** Footer -->
   <footer>
     <div class="container">

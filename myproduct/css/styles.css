@@ -44,7 +44,10 @@ img {
 section {
   min-height: 100vh;
   overflow-x: hidden;
+
+  scroll-snap-align: start;
 }
+
 .btn {
   padding: 13px;
   text-decoration: none;
@@ -261,10 +264,6 @@ footer {
   }
   .flex-img img {
     margin: 0 30px 0 0;
-  }
-
-  section {
-    scroll-snap-align: start;
   }
 }
 @media screen and (min-width: 520px) {
